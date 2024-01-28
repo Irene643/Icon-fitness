@@ -1,0 +1,233 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- Bootstrap JS and Popper.js scripts -->
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.14.7/dist/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.3.1/dist/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.3.1/dist/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css">
+    <script src="https://cdn.emailjs.com/dist/email.min.js"></script>
+    <link rel="stylesheet" href="styles/style.css">
+    <title>Icon Fitness Hub</title>
+</head>
+<body>
+    <header class="bg-dark text-white text-center py-3">
+        <h1>Icon Fitness Hub</h1>
+    </header><br>
+    <div class="container-fluid">
+        <div class="row">
+            <!-- Sidebar -->
+            <nav id="sidebar" class="col-md-3 col-lg-2 d-md-block bg-light sidebar">
+                <div class="container">
+                    <h2 class="mt-4">Menu</h2>
+                    <ul class="nav flex-column">
+                        <li class="nav-item">
+                            <a class="nav-link" href="#intro">Welcome</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#bmiCalculator">BMI Calculator</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#animatedImages">Gym Items</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#contactForm">Contact Us</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#aboutUs">About Us</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#ourStory">Our Story</a>
+                        </li>
+                    </ul>
+                </div>
+            </nav>
+
+            <main class="col-md-9 ms-sm-auto col-lg-10 px-md-4">
+                <section id="intro" class="scroll-section animate__animated animate__fadeIn">
+                    <h2>Welcome to Icon Fitness Hub</h2>
+                    <p>The gateway to all your fitness and overall wellness dream. At Icon,
+                        we offer personalized training and that match your needs.
+                        Our coaches are talented and dedicated to providing quality services at no extra costs.
+                    </p>
+                </section>
+
+                <section id="bmiCalculator" class="scroll-section animate__animated animate__fadeIn">
+                    <h2>BMI Calculator</h2>
+                    <form id="bmiForm">
+                        <div class="mb-3">
+                            <label for="height" class="form-label">Height (cm):</label>
+                            <input type="number" id="height" class="form-control" required>
+                        </div>
+
+                        <div class="mb-3">
+                            <label for="weight" class="form-label">Weight (kg):</label>
+                            <input type="number" id="weight" class="form-control" required>
+                        </div>
+
+                        <button type="button" id="calculateButton" class="btn btn-primary">Calculate BMI</button>
+
+                        <p id="bmiResult"></p>
+                    </form>
+                </section>
+
+                <section id="animatedImages" class="scroll-section animate__animated animate__fadeIn">
+                    <h2>Gym Equipment</h2>
+                    <div class="row gy-4">
+                        <!-- Bootstrap Cards for Gym Items -->
+                        <div class="col-md-4">
+                            <div class="card h-100">
+                                <img src="images/treadmill.jpg" class="card-img-top" alt="Gym Item 1">
+                                <div class="card-body">
+                                    <h5 class="card-title">Treadmill</h5>
+                                    <p class="card-text">Used to perform cardiovascular workouts
+                                        such as jog, run, or walk in the same place.</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-md-4">
+                            <div class="card h-100">
+                                <img src="images/preacher-bench.jpg" class="card-img-top" alt="Gym Item 1">
+                                <div class="card-body">
+                                    <h5 class="card-title">Preacher Bench</h5>
+                                    <p class="card-text">Provides controlled environment for
+                                        developing and strengthening biceps</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-md-4">
+                            <div class="card h-100">
+                                <img src="images/pullup-bar.jpg" class="card-img-top" alt="Gym Item 1">
+                                <div class="card-body">
+                                    <h5 class="card-title">Pull Up Bar</h5>
+                                    <p class="card-text">Popular for building upper body strength, targeting
+                                        the muscles in the back, shoulders, arms, and core</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div><br>
+                    <div class="row gy-4">
+                        <!-- Bootstrap Cards for Gym Items -->
+                        <div class="col-md-4">
+                            <div class="card h-100">
+                                <img src="images/lat-pulldown.jpg" class="card-img-top" alt="Gym Item 1">
+                                <div class="card-body">
+                                    <h5 class="card-title">Lat Pull Down</h5>
+                                    <p class="card-text">Allows users to perform a pulling motion similar to
+                                        that of a pull-up or chin-up. Targeting muscles in the upper back and shoulders.</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-md-4">
+                            <div class="card h-100">
+                                <img src="images/spin-bike.jpg" class="card-img-top" alt="Gym Item 1">
+                                <div class="card-body">
+                                    <h5 class="card-title">Spin Bike</h5>
+                                    <p class="card-text">Spin biking provides an effective cardiovascular workout,
+                                        improving heart health and endurance. Engages several muscle groups and
+                                        promotes calorie burning.</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-md-4">
+                            <div class="card h-100">
+                                <img src="images/leg-extension.jpg" class="card-img-top" alt="Gym Item 1">
+                                <div class="card-body">
+                                    <h5 class="card-title">Leg Extension</h5>
+                                    <p class="card-text">Used for strength training exercise that primarily targets the
+                                        quadriceps muscles in the front of the thighs.</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div><br>
+                    <h2>Members' Feedback</h2>
+                    <div id="customerFeedbackCarousel" class="carousel slide" data-ride="carousel">
+                        <div class="carousel-inner">
+                            <div class="carousel-item active">
+                                <div class="feedback-item">
+                                    <p class="feedback-text">
+                                        "Great gym! The equipment is top-notch, and the atmosphere is fantastic."
+                                    </p>
+                                    <p class="customer-name">
+                                        - John Doe
+                                    </p>
+                                </div>
+                            </div>
+                            <div class="carousel-item">
+                                <div class="feedback-item">
+                                    <p class="feedback-text">
+                                        "Love the variety of workouts I can do here. Highly recommend!"
+                                    </p>
+                                    <p class="customer-name">
+                                        - Jane Smith
+                                    </p>
+                                </div>
+                            </div>
+                            <div class="carousel-item">
+                                <div class="feedback-item">
+                                    <p class="feedback-text">
+                                        "The staff is friendly, and the facilities are always clean. A+!"
+                                    </p>
+                                    <p class="customer-name">
+                                        - Mike Johnson
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+                        <a class="carousel-control-prev" href="#customerFeedbackCarousel" role="button" data-slide="prev">
+                            <span class="carousel-control-prev-icon" aria-hidden="false"></span>
+                            <span class="sr-only">Previous</span>
+                        </a>
+                        <a class="carousel-control-next" href="#customerFeedbackCarousel" role="button" data-slide="next">
+                            <span class="carousel-control-next-icon" aria-hidden="false"></span>
+                            <span class="sr-only">Next</span>
+                        </a>
+                    </div>
+                </section>
+                
+                <section id="sampleContactForm" class="scroll-section animate__animated animate__fadeIn">
+                    <h2>Contact Us</h2>
+                    <form id="contactForm">
+                        <div class="mb-3">
+                            <label for="name" class="form-label">Name:</label>
+                            <input type="text" id="name" name="name" class="form-control" required>
+                        </div>
+                
+                        <div class="mb-3">
+                            <label for="email" class="form-label">Email:</label>
+                            <input type="email" id="email" name="email" class="form-control" required>
+                        </div>
+                
+                        <div class="mb-3">
+                            <label for="message" class="form-label">Message:</label>
+                            <textarea id="message" name="message" rows="4" class="form-control" required></textarea>
+                        </div>
+                
+                        <button type="submit" class="btn btn-primary">Send Message</button>
+                    </form>
+                </section> <br>
+
+                <section id="aboutUs" class="scroll-section animate__animated animate__fadeIn">
+                    <h2>About Us</h2>
+                    <p>Welcome to Icon Fitness Hub, where fitness meets excellence. We are passionate about helping you achieve your fitness goals and living a healthy lifestyle. Our state-of-the-art facilities, experienced trainers, and a supportive community make Icon Fitness Hub the perfect place to embark on your fitness journey.</p>
+                    <p>At Icon Fitness Hub, we believe in providing a holistic approach to health and wellness. Whether you are a beginner or a fitness enthusiast, our team is dedicated to guiding you every step of the way. Join us and experience the transformation – not just in your physique but in your overall well-being.</p>
+                </section>
+
+                <section id="ourStory" class="scroll-section animate__animated animate__fadeIn">
+                    <h2>Our Story</h2>
+                    <p>Established in 2020, Icon Fitness Hub started with a simple yet powerful vision: to create a fitness haven where individuals could achieve their fitness aspirations and lead healthier lives. Over the years, our gym has grown into a vibrant community of like-minded individuals committed to wellness.</p>
+                    <p>Our journey has been filled with success stories, overcoming challenges, and celebrating milestones. From introducing innovative fitness programs to expanding our facilities, Icon Fitness Hub continues to evolve to meet the dynamic needs of our members.</p>
+                    <p>Join us in celebrating health, strength, and the joy of living an active lifestyle. Your story is a part of our story, and together, we will write many more chapters of success and well-being.</p>
+                </section>
+            </main>
+        </div>
+    </div>
+    <footer class="bg-dark text-white text-center py-3">
+        <h5>&copy Icon Fitness Hub, 2024</h5>
+    </footer>
+    <script src="scripts/script.js"></script>
+</body>
+</html>

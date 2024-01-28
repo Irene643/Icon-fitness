@@ -1,0 +1,67 @@
+/* Add your existing styles here */
+
+/* Additional styles for the banner image */
+.banner-container {
+    overflow: hidden;
+}
+
+.banner-container img {
+    width: 100%;
+    height: auto;
+}
+
+/* Additional styles for Bootstrap cards and contact form */
+.card {
+    transition: transform 0.3s;
+}
+
+.card:hover {
+    transform: scale(1.05);
+}
+.card-title {
+    color: maroon;
+}
+/* Additional styles for h2 tags */
+h2 {
+    font-family: 'Arial', sans-serif;
+    background-color: #f8f9fa;
+    padding: 10px;
+}
+
+/* Custom styles for the customer feedback section */
+
+#customerFeedbackCarousel {
+    width: 80%;
+    margin: auto;
+}
+
+.feedback-item {
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1); /* Add a subtle shadow */
+    text-align: center;
+}
+
+.feedback-text {
+    font-size: 18px;
+    color: maroon; /* Maroon text color */
+    font-style: italic;
+}
+
+.customer-name {
+    margin-top: 10px;
+    font-weight: bold;
+    color: maroon; /* Maroon text color */
+}
+
+/* Navigation controls color */
+.carousel-control-prev,
+.carousel-control-next {
+    color: black; /* Black arrow color */
+    font-weight: bold; /* Bold arrow text */
+}
+
+/* Active indicator color */
+.carousel-indicators .active {
+    background-color: black; /* Black active indicator color */
+}
